@@ -1,0 +1,14 @@
+resources:
+  - ../../base
+
+nameSuffix: -dev
+
+namespace: development
+
+images:
+  - name: nginx
+    newTag: 1.29.6
+
+replicas:
+  - name: nginx
+    count: 2
