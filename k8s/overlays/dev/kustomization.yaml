@@ -1,14 +1,17 @@
 resources:
-  - ../../base
+- ../../base
 
 nameSuffix: -dev
 
 namespace: development
 
 images:
-  - name: miniweb
-    newTag: 1.29.6
+- digest: sha256:33f68eed378d1f9fa2f5cdeb5246184a5a43458c267a0e1c9d797d07f37ba6c4
+  name: miniweb
+  newName: ghcr.io/joekyo/miniweb
 
 replicas:
-  - name: miniweb
-    count: 1
+- count: 1
+  name: miniweb
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
