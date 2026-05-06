@@ -1,9 +1,9 @@
 resources:
   - ../../base
 
-nameSuffix: -dev
+nameSuffix: -prod
 
-namespace: development
+namespace: production
 
 images:
   - name: miniweb
@@ -11,4 +11,4 @@ images:
 
 replicas:
   - name: miniweb
-    count: 1
+    count: 3
