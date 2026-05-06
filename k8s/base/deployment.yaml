@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: miniweb
-          image: ghcr.io/joekyo/miniweb
+          image: miniweb@sha256:0123456789
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
