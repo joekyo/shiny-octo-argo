@@ -6,9 +6,9 @@ nameSuffix: -dev
 namespace: development
 
 images:
-  - name: nginx
+  - name: miniweb
     newTag: 1.29.6
 
 replicas:
-  - name: nginx
+  - name: miniweb
     count: 3

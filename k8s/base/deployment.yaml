@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx
+  name: miniweb
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nginx
+      app: miniweb
   template:
     metadata:
       labels:
-        app: nginx
+        app: miniweb
     spec:
       containers:
-        - name: nginx
-          image: nginx:1.25
+        - name: miniweb
+          image: ghcr.io/joekyo/miniweb
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
